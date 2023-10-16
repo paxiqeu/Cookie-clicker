@@ -1,0 +1,76 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://media.istockphoto.com/id/1312314989/cs/vektor/b%C3%ADl%C3%A9-dla%C5%BEdice-metra-bezprobl%C3%A9mov%C3%A9-pozad%C3%AD-subway-cihla-horizont%C3%A1ln%C3%AD-vzor-pro-kuchy%C5%88-koupelnu.jpg?s=612x612&w=0&k=20&c=6bvitQyXIab5V61pRztpMeyzsq8lpnMhY5ioxEJfneg=);
+}
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 10px 5px;
+}
+
+.score{
+    font-size:  4rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #000;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#Pizzza {
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    transition: transform 0.2s;
+    padding-top: 2% ;
+}
+
+#Pizzza:hover {
+
+    transform: scale(1.1);
+
+}
+
+button {
+    background-color: red ;
+    color: yellow;
+    border: none;
+    padding:35px 30px;
+    font-size: 25px;
+    margin: 10px;
+    width: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+.text {
+    font-size: 25px;    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button#upgradeButton {
+    background-color: rgb(85, 255, 0);
+    transition: background-color 0.3s;
+}
+
+button#upgradeButton:hover {
+    background-color: red;
+}
