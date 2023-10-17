@@ -4,7 +4,8 @@ let clickerupgradevari = 0;
 let upgrade_pas = 50;
 let autoupgrade = 100;
 let autoClickLevel = 0;
-let interva
+let interval;
+
 
 /*----------------------------------------------------*/
 
@@ -31,10 +32,10 @@ function upgrade() {
         pizza -= autoupgrade;
         updatePizzaDisplay();
         clearInterval(interval);
-        interval = setInterval(autoClick, 10);
+        interval = setInterval(autoClick, 1000);
         autoupgrade += 100;
         autoClickLevel++;
-        document.getElementById("AClick").innerText = "Kamarád taky rád: " + autoupgrade;
+        document.getElementById("autoupgrade").innerText = "Kamarád taky rád: " + autoupgrade;
     } else {
         alert("Jseš ještě moc hubenej");
     }
@@ -47,8 +48,7 @@ function clickerupgrade() {
         clickerupgradevari = 1;
         upgrade_pas += 50; // Zvýšení ceny dalšího upgrade o 50
         updatePizzaDisplay();
-        document.getElementById("Click").innerText = "Lepší pizza: " + upgrade_pas;
-
+        document.getElementById("AClick").innerText = "Lepší pizza: " + upgrade_pas;
     } else {
         alert("Jseš ještě moc hubenej");
     }
